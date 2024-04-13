@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    
+<script>
+
+    function determinarVencedor() {
+        const golsCorinthians = parseInt(prompt("Informe o número de gols marcados pelo Corinthians:"));
+        const golsPalmeiras = parseInt(prompt("Informe o número de gols marcados pelo Palmeiras:"));
+        
+        if (isNaN(golsCorinthians) || isNaN(golsPalmeiras)) {
+            alert("Por favor, informe um número válido de gols.");
+            return;
+        }
+        
+        if (golsCorinthians > golsPalmeiras) {
+            alert("O Corinthians é o vencedor!");
+        } else if (golsPalmeiras > golsCorinthians) {
+            alert("O Palmeiras é o vencedor!");
+        } else {
+            alert("EMPATE!");
+        }
+    }
+
+        determinarVencedor();
+
+
+
+</script>
+
+
+
+</body>
+</html>

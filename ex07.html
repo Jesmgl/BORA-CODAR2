@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    
+<script>
+
+function calcularValorCompra() {
+    const precoMenosDe12 = 3.50;
+    const precoMaisDe12 = 2.50;
+    
+    const quantidade = parseInt(prompt("Informe a quantidade de maçãs compradas:"));
+    
+    if (isNaN(quantidade) || quantidade <= 0) {
+        alert("Por favor, informe uma quantidade válida.");
+        return;
+    }
+    
+    let valorTotal;
+    if (quantidade < 12) {
+        valorTotal = quantidade * precoMenosDe12;
+    } else {
+        valorTotal = quantidade * precoMaisDe12;
+    }
+    
+    alert(`O valor total da compra é: R$ ${valorTotal.toFixed(2)}`);
+}
+
+calcularValorCompra();
+
+
+</script>
+
+
+
+</body>
+</html>
